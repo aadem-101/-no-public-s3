@@ -5,4 +5,4 @@ deny[message] {
   input.acl == "public-read"
   message := "S3 buckets cannot be publicly readable (acl: public-read)"
 }
-policy = "./policy"
+conftest test input.json --all-namespaces
